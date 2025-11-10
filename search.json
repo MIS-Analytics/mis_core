@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nmove_columns\n\n move_columns (df:pandas.core.frame.DataFrame, cols_to_move:str, pos:int)\n\nMove one or more columns to a specified position in a DataFrame.\n\n\n\n\nType\nDetails\n\n\n\n\ndf\nDataFrame\nInput\n\n\ncols_to_move\nstr\nSingle\n\n\npos\nint\nTarget\n\n\nReturns\nDataFrame\n\n\n\n\n\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})\ndf\n\n\n\n\n\n\n\n\nA\nB\nC\n\n\n\n\n0\n1\n4\n7\n\n\n1\n2\n5\n8\n\n\n2\n3\n6\n9\n\n\n\n\n\n\n\n\nmove_columns(df, 'C', 0)\n\n\n\n\n\n\n\n\nC\nA\nB\n\n\n\n\n0\n7\n1\n4\n\n\n1\n8\n2\n5\n\n\n2\n9\n3\n6",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "mis_core",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "mis_core"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "mis_core",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall mis_core in Development mode\n# make sure mis_core package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to mis_core\n$ nbdev_prepare",
+    "crumbs": [
+      "mis_core"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "mis_core",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/MIS-Analytics/mis_core.git\nor from conda\n$ conda install -c MIS-Analytics mis_core\nor from pypi\n$ pip install mis_core\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "mis_core"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "mis_core",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "mis_core"
+    ]
+  }
+]
