@@ -1,0 +1,1 @@
+Sitemap: https://MIS-Analytics.github.io/mis_core/sitemap.xml

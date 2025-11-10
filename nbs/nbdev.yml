@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "mis_core"
+  site-url: "https://MIS-Analytics.github.io/mis_core"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/MIS-Analytics/mis_core"
