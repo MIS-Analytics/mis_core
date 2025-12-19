@@ -42,8 +42,8 @@ def print_step_name(meta_dict): print(15*'*' + ' ' + meta_dict['step_name'] + ' 
 def print_time(meta_dict):
     print(f'Total Time: {format_timedelta(meta_dict["total_time"])}')
     print('')
-    print(f'Start: {meta_dict['in_time']}')
-    print(f'  End: {meta_dict['out_time']}')
+    print(f'Start: {meta_dict["in_time"]}')
+    print(f'  End: {meta_dict["out_time"]}')
 
 # %% ../nbs/10_etl.ipynb 50
 import numpy as np
