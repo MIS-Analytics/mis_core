@@ -39,11 +39,13 @@ def clean_string(input_string:str):
     processed_string = "".join(c if c.isalnum() else "_" for c in input_string.lower()).strip("_")
     return "_".join(filter(None, processed_string.split("_")))
 
-# %% ../nbs/00_core.ipynb #dce9f5bd
-def clean_col_names(df:pd.DataFrame) -> pd.DataFrame:
-    """Returns df with clean column names by using `clean_string` on each column name."""
-    df.columns = [clean_string(col.lower()) for col in df.columns]
-    return df
+# %% ../nbs/00_core.ipynb #85b61e6b-1bc8-4568-a48d-4ab67db94a07
+def clean_col_names(df):
+    """Returns df with clean column names, supports both pandas and polars."""
+    if isinstance(df, pd.DataFrame):
+        df.columns = [clean_string(col) for col in df.columns]
+        return df
+    return df.rename({col: clean_string(col) for col in df.columns})
 
 # %% ../nbs/00_core.ipynb #fb377cfc
 def show_identical_columns(
